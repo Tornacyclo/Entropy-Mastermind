@@ -5,6 +5,8 @@
 
 const int MAX_GUESSES = 10;
 
+
+
 bool check_guess(std::string guess, std::string code) {
     int correct_pos = 0;
     int correct_color = 0;
@@ -26,6 +28,7 @@ bool check_guess(std::string guess, std::string code) {
 
     return correct_pos == 4;
 }
+
 
 void solve_entropy_mastermind(std::string code) {
     std::string guess;
@@ -57,6 +60,8 @@ void solve_entropy_mastermind(std::string code) {
 
     std::cout << "You lose! The code was " << code << "." << std::endl;
 }
+
+
 
 int main() {
     std::string code;
